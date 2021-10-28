@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('pagina-home');
+Route::get('/', 'MainController@listMovies')->name('pagina-home');
