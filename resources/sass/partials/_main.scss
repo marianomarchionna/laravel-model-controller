@@ -1,0 +1,25 @@
+main {
+    .container {
+        height: calc(100vh - 100px);
+        background-color: $black;
+        color: $white;
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            height: 250px;
+            width: calc(100% / 5 - 30px);
+            border: 1px solid $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            .title {
+                font-weight: $bold;
+            }
+            .information {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
